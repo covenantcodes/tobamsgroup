@@ -190,16 +190,34 @@ function App() {
           <div className="footer_box">
             <div className="footer_head">Contact Us</div>
 
-            <div className="footer_items">support@rareeatfresh.com</div>
-
-            <div className="footer_items">020 7205 4031</div>
-
             <div className="footer_items">
-              International House, 64 Nile Street, London, N1 7SR, United
-              Kingdom
+              support@rareeatfresh.com <br /> 020 7205 4031 <br />International House,
+              64 Nile Street, London, N1 7SR, United Kingdom
+            </div>
+            <div className="footer_social_container">
+              <div className="footer_social_box">
+                <i className="fa-brands fa-facebook-f footer_social_icon"></i>
+              </div>
+
+              <div className="footer_social_box">
+                <i className="fa-brands fa-instagram footer_social_icon"></i>
+              </div>
+
+              <div className="footer_social_box">
+                <i className="fa-brands fa-twitter footer_social_icon"></i>
+              </div>
+
+              <div className="footer_social_box">
+                <i className="fa-brands fa-linkedin-in footer_social_icon"></i>
+              </div>
             </div>
           </div>
         </div>
+
+        <div className="rights">
+            Copyright © 2023 Rare Eat Fresh. All rights reserved.
+        </div>
+
       </div>
     </div>
   );
