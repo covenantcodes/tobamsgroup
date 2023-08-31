@@ -34,6 +34,7 @@ function App() {
       <div className="desktop_nav_bar">
         <div className="logo_container">
           <img
+            className="logo_main"
             src="../public/img/Logo.png"
             alt=""
             data-aos="zoom-in"
@@ -207,14 +208,11 @@ function App() {
             </div>
           </div>
 
-          <CustomButton
-            text="Send"
-            backgroundColor="#F36F00"
-            textColor="white"
-            width="100%"
-            borderRadius="32px"
-            // textAlign="center"
-          />
+          <div className="action_button">
+                  Send
+          </div>
+
+      
         </div>
       </div>
 
@@ -246,13 +244,10 @@ function App() {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           />
-          <CustomButton
-            text="Subscribe"
-            backgroundColor="#F36F00"
-            textColor="white"
-            width="20%"
-            borderRadius="32px"
-          />
+
+        <div className="subscribe_button">
+                  Subscribe
+          </div>
         </div>
       </div>
 

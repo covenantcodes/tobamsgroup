@@ -2,6 +2,7 @@ import React from "react";
 
 interface CustomButtonProps {
   text: string;
+  className?: string; // Allow setting a custom class name
   backgroundColor?: string;
   textColor?: string;
   width?: string;
@@ -14,6 +15,7 @@ interface CustomButtonProps {
 
 const CustomButton: React.FC<CustomButtonProps> = ({
   text,
+  className = "", // Default to an empty string if not provided
   backgroundColor = "var(--button-color)",
   textColor = "var(--primary-color)",
   width = "24%",
@@ -36,9 +38,11 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   if (mediaQuery.matches) {
     buttonStyle.padding = responsivePadding;
   }
+  // Combine the provided class name with the default class name
+  const combinedClassName = `action_button ${className}`;
 
   return (
-    <div className="action_button" data-aos="fade-in" style={buttonStyle}>
+    <div className={combinedClassName} data-aos="fade-in" style={buttonStyle}>
       {text}
     </div>
   );

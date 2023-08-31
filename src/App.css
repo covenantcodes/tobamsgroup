@@ -245,6 +245,11 @@
 }
 
 .action_button {
+  border-radius: 32px;
+  background-color: #f36f00;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -252,6 +257,20 @@
   transform: scale(0.95);
   transition: ease-in-out 0.6s all;
   cursor: pointer;
+}
+
+.subscribe_button {
+  border-radius: 32px;
+  background-color: #f36f00;
+  padding: 0.9rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subscribe_button:hover {
+  transform: scale(0.95);
+  transition: ease-in-out 0.6s all;
 }
 
 .footer {
@@ -518,16 +537,15 @@
       width: 30%;
     }
 
-    .action_button {
-      padding: 0.5rem;
-      font-size: 0.8em;
-      font-weight: bold;
-    }
-
     .sub_input {
       padding: 0.5rem;
       font-size: 14px;
       width: 60%;
+    }
+
+    .email_sub_container {
+      border: 1px solid red;
+      width: 50%;
     }
 
     .footer_social_container {
@@ -566,6 +584,14 @@
   }
 
   @media screen and (max-width: 786px) {
+    .contact_container {
+      padding: 2rem;
+    }
+    .logo_main {
+      width: 80%;
+      border: 1px solid red;
+    }
+
     .about_us {
       width: 67%;
     }
@@ -612,8 +638,7 @@
   }
 
   @media screen and (max-width: 668px) {
-
-    .about_us{
+    .about_us {
       width: 68%;
     }
 
@@ -630,64 +655,147 @@
       font-size: 1.5rem;
     }
 
-    .input_name{
-      padding: .8rem;
-      font-size: .9rem;
+    .input_name {
+      padding: 0.8rem;
+      font-size: 0.9rem;
     }
 
-    .input_email{
-      padding: .8rem;
-      font-size: .9rem;
-
+    .input_email {
+      padding: 0.8rem;
+      font-size: 0.9rem;
     }
 
-    .input_problem{
-      padding: .8rem;
-      font-size: .9rem;
-
+    .input_problem {
+      padding: 0.8rem;
+      font-size: 0.9rem;
     }
 
     .name_input_box {
-      padding: .5rem 0rem;
+      padding: 0.5rem 0rem;
     }
 
-    .logo_about{
+    .logo_about {
       width: 25%;
     }
 
-    .newsletter_container_header{
-      font-size: 1.5rem; 
+    .newsletter_container_header {
+      font-size: 1.5rem;
     }
 
-    .newsletter_container_description{
+    .newsletter_container_description {
       font-size: 1rem;
     }
   }
 
-  @media screen and (max-width:614px){
-      .header_text_description{
-        font-size: .85rem;
-      }
+  @media screen and (max-width: 614px) {
+    .header_text_description {
+      font-size: 0.85rem;
+    }
 
-      .logo_about{
-        width: 25%;
-      }
+    .logo_about {
+      width: 25%;
+    }
 
-      .social_container{
-        width: 55%;
-      }
+    .social_container {
+      width: 55%;
+    }
 
-      .footer_social_container{
-        width: 55%;
-      }
+    .footer_social_container {
+      width: 55%;
+    }
 
-      .email_sub_container{
-          width: 70%;
-      }
+    .email_sub_container {
+      width: 70%;
+    }
   }
 
-  @media screen and (max-width:425px) {
-    
+  @media screen and (max-width: 425px) {
+    .header_text {
+      font-size: 1.7rem;
+    }
+
+    .header_text_description {
+      line-height: 1.4;
+    }
+
+    .input_email {
+      border-radius: 12px;
+      padding: 0.5rem;
+    }
+
+    .input_name {
+      border-radius: 12px;
+      padding: 0.5rem;
+    }
+
+    .input_problem {
+      border-radius: 12px;
+      padding: 0.5rem;
+    }
+
+    .email_sub_container {
+      width: 50%;
+    }
+
+    .about_us {
+      width: 82%;
+    }
+
+    .logo_about {
+      width: 40%;
+    }
+
+    .social_container {
+      width: 70%;
+    }
+
+    .footer_social_container {
+      width: 70%;
+    }
+
+    .rights {
+      text-align: center;
+    }
+
+    .email_sub_container {
+      width: 100%;
+      padding: 0.5rem;
+    }
+
+    .action_button {
+      font-size: 0.8rem;
+    }
+
+    .subscribe_button {
+      width: 20%;
+      font-size: 0.8rem;
+    }
+
+    .sub_input {
+      width: 60%;
+    }
+    .contact_container {
+      width: 76%;
+    }
   }
 
+  @media screen and (max-width: 375px) {
+    .about_us {
+      width: 82%;
+    }
+
+    .contact_container {
+      width: 76%;
+    }
+
+    .footer_social_container {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .footer_social_container {
+      width: 100%;
+    }
+  }
 }
