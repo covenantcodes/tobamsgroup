@@ -28,6 +28,10 @@
   cursor: pointer;
 }
 
+.hamburger{
+  display: none;
+}
+
 .search_bar {
   border: 1px solid #d0d0d0;
   padding: 1rem;
@@ -310,4 +314,26 @@
   align-items: center;
   padding:1rem ;
   
+}
+
+
+
+/* RESPONISIVE DESIGN */
+@media only screen and (max-width: 1500px){
+  .nav_links_container{
+    border: 1px solid red;
+    display: none;
+  }
+
+  .search_bar{
+    display: none;
+  }
+
+  .left_nav_items{
+    display: none;
+  }
+
+    .hamburger{
+      display: block;
+    }
 }

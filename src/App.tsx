@@ -1,17 +1,29 @@
 import "./App.css";
 import CustomButton from "./components/Button";
 // AOS
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
-AOS.init();
+AOS.init({
+  once: true,
+});
 
 function App() {
   return (
     <div>
       <div className="nav_bar">
         <div className="logo_container">
-          <img src="../public/img/Logo.png" alt="" />
+          <img
+            src="../public/img/Logo.png"
+            alt=""
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          />
+        </div>
+
+        <div className="hamburger">
+            <i className="fa-solid fa-bars"></i>
         </div>
 
         <ul className="nav_links_container">
@@ -42,7 +54,12 @@ function App() {
       </div>
 
       <div className="contact_body">
-        <div className="about_us">
+        <div
+          className="about_us"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <img src="../public/img/Logo.png" alt="" className="logo_about" />
           <div className="about_text">
             RARE EAT FRESH represents a range of unique ingredients and the
@@ -72,7 +89,12 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="contact_container">
+        <div
+          className="contact_container"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <div className="contact_header">
             <div className="header_text">
               Get in touch
@@ -132,10 +154,20 @@ function App() {
       </div>
 
       <div className="newsletter_container">
-        <div className="newsletter_container_header">
+        <div
+          className="newsletter_container_header"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           Join Our Newsletter: Stay Connected, Savor Exclusives!
         </div>
-        <div className="newsletter_container_description">
+        <div
+          className="newsletter_container_description"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           Subscribe to our newsletter and be a part of the vibrant Rare Eat
           Fresh community. Stay connected with the latest updates, exclusive
           offers, and exciting promotions on rare West African food ingredients.
@@ -145,6 +177,9 @@ function App() {
             type="text"
             placeholder="Email Address"
             className="sub_input"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
           />
           <CustomButton
             text="Subscribe"
@@ -196,8 +231,9 @@ function App() {
             <div className="footer_head">Contact Us</div>
 
             <div className="footer_items">
-              support@rareeatfresh.com <br /> 020 7205 4031 <br />International House,
-              64 Nile Street, London, N1 7SR, United Kingdom
+              support@rareeatfresh.com <br /> 020 7205 4031 <br />
+              International House, 64 Nile Street, London, N1 7SR, United
+              Kingdom
             </div>
             <div className="footer_social_container">
               <div className="footer_social_box">
@@ -220,9 +256,8 @@ function App() {
         </div>
 
         <div className="rights">
-            Copyright © 2023 Rare Eat Fresh. All rights reserved.
+          Copyright © 2023 Rare Eat Fresh. All rights reserved.
         </div>
-
       </div>
     </div>
   );

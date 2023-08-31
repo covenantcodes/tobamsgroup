@@ -31,7 +31,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   };
 
   return (
-    <div className="action_button" style={buttonStyle}>
+    <div className="action_button" data-aos="fade-in" style={buttonStyle}>
       {text}
     </div>
   );
