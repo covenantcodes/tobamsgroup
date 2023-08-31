@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import CustomButton from "./components/Button";
 // AOS
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
