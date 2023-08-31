@@ -10,6 +10,7 @@
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 1000;
   background-color: white;
 }
 
@@ -247,4 +248,32 @@
   transform: scale(0.95);
   transition: ease-in-out .6s all;
   cursor: pointer;
+}
+
+.footer{
+  background-color: var(--secondary-color);
+  padding: 4rem;
+}
+
+.footer_box_container{
+  display: flex;
+  width: 100%;
+}
+
+.footer_box{
+  border: 1px solid white;
+  width: 25%;
+}
+
+.footer_head{
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--primary-color);
+  padding: 1rem 0rem;
+}
+
+.footer_items{
+  color: white;
+  padding: .7rem 0rem;
+
 }

@@ -136,15 +136,69 @@ function App() {
           offers, and exciting promotions on rare West African food ingredients.
         </div>
         <div className="email_sub_container">
-              <input type="text" placeholder="Email Address" className="sub_input"/>
-              <CustomButton
-                text="Subscribe"
-                backgroundColor="#F36F00"
-                textColor="white"
-                width="20%"
-                borderRadius="32px"
-                
+          <input
+            type="text"
+            placeholder="Email Address"
+            className="sub_input"
           />
+          <CustomButton
+            text="Subscribe"
+            backgroundColor="#F36F00"
+            textColor="white"
+            width="20%"
+            borderRadius="32px"
+          />
+        </div>
+      </div>
+
+      <div className="footer">
+        <div className="logo_box">
+          <img src="../public/img/Logo.png" alt="" />
+        </div>
+
+        <div className="footer_box_container">
+          <div className="footer_box">
+            <div className="footer_head">Company</div>
+
+            <div className="footer_items">About Us</div>
+
+            <div className="footer_items">Store</div>
+
+            <div className="footer_items">Blog</div>
+          </div>
+
+          <div className="footer_box">
+            <div className="footer_head">Legal</div>
+
+            <div className="footer_items">Term and Conditions</div>
+
+            <div className="footer_items">Privacy Policy</div>
+
+            <div className="footer_items">Shipping Policy</div>
+            <div className="footer_items">Returns & Refunds</div>
+            <div className="footer_items">Cookies</div>
+          </div>
+
+          <div className="footer_box">
+            <div className="footer_head">Need Help?</div>
+
+            <div className="footer_items">Track Order</div>
+
+            <div className="footer_items">FAQ's</div>
+          </div>
+
+          <div className="footer_box">
+            <div className="footer_head">Contact Us</div>
+
+            <div className="footer_items">support@rareeatfresh.com</div>
+
+            <div className="footer_items">020 7205 4031</div>
+
+            <div className="footer_items">
+              International House, 64 Nile Street, London, N1 7SR, United
+              Kingdom
+            </div>
+          </div>
         </div>
       </div>
     </div>
