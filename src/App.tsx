@@ -43,19 +43,34 @@ function App() {
           />
         </div>
 
-        <ul className="nav_links_container">
+        <ul
+          className="nav_links_container"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <li className="nav_links">Store</li>
           <li className="nav_links">About</li>
           <li className="nav_links">Contact</li>
           <li className="nav_links">Blog</li>
         </ul>
 
-        <div className="search_bar">
+        <div
+          className="search_bar"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <i className="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="Search" className="search_input" />
         </div>
 
-        <div className="left_nav_items">
+        <div
+          className="left_nav_items"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <img src="../public/img/uk.png" alt="" className="uk_logo" />
           <img
             src="../public/img/shopping-cart.png"
@@ -69,7 +84,13 @@ function App() {
           </div>
         </div>
 
-        <div className="hamburger" onClick={toggleMenu}>
+        <div
+          className="hamburger"
+          onClick={toggleMenu}
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"}`}></i>
         </div>
       </div>
@@ -77,7 +98,12 @@ function App() {
       {isMenuOpen && (
         <div className="mobile_nav_bar">
           <div className={`navbar_menu ${isMenuOpen ? "open" : ""}`}>
-            <ul className="mobile_nav_links_container">
+            <ul
+              className="mobile_nav_links_container"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <li className="mobile_nav_links">Store</li>
               <li className="mobile_nav_links">About</li>
               <li className="mobile_nav_links">Contact</li>
@@ -208,11 +234,7 @@ function App() {
             </div>
           </div>
 
-          <div className="action_button">
-                  Send
-          </div>
-
-      
+          <div className="action_button">Send</div>
         </div>
       </div>
 
@@ -240,13 +262,18 @@ function App() {
             type="text"
             placeholder="Email Address"
             className="sub_input"
-            data-aos="zoom-in"
+            data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           />
 
-        <div className="subscribe_button">
-                  Subscribe
+          <div
+            className="subscribe_button"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            Subscribe
           </div>
         </div>
       </div>
@@ -257,7 +284,12 @@ function App() {
         </div>
 
         <div className="footer_box_container">
-          <div className="footer_box">
+          <div
+            className="footer_box"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <div className="footer_head">Company</div>
 
             <div className="footer_items">About Us</div>
@@ -267,7 +299,12 @@ function App() {
             <div className="footer_items">Blog</div>
           </div>
 
-          <div className="footer_box">
+          <div
+            className="footer_box"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <div className="footer_head">Legal</div>
 
             <div className="footer_items">Term and Conditions</div>
@@ -279,7 +316,12 @@ function App() {
             <div className="footer_items">Cookies</div>
           </div>
 
-          <div className="footer_box">
+          <div
+            className="footer_box"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <div className="footer_head">Need Help?</div>
 
             <div className="footer_items">Track Order</div>
@@ -287,7 +329,12 @@ function App() {
             <div className="footer_items">FAQ's</div>
           </div>
 
-          <div className="footer_box">
+          <div
+            className="footer_box"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <div className="footer_head">Contact Us</div>
 
             <div className="footer_items">
@@ -296,7 +343,12 @@ function App() {
               Kingdom
             </div>
             <div className="footer_social_container">
-              <div className="footer_social_box">
+              <div
+                className="footer_social_box"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
                 <i className="fa-brands fa-facebook-f footer_social_icon"></i>
               </div>
 
@@ -315,7 +367,10 @@ function App() {
           </div>
         </div>
 
-        <div className="rights">
+        <div className="rights" 
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out">
           Copyright © 2023 Rare Eat Fresh. All rights reserved.
         </div>
       </div>

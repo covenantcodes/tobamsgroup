@@ -89,7 +89,6 @@
   background-image: url(../public/img/bg-phone.png);
   /* height: 80vh; */
   padding: 4rem 10rem;
-  /* border: 1px solid red; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -335,16 +334,13 @@
 @media screen and (max-width: 1600px) {
   .about_us {
     width: 300px;
-    border: 1px solid red;
   }
 
   .social_container {
-    border: 1px solid rebeccapurple;
     width: 60%;
   }
 
   .footer_social_container {
-    border: 1px solid rebeccapurple;
     width: 60%;
   }
 
@@ -360,7 +356,6 @@
   }
 
   .nav_links_container {
-    border: 1px solid red;
     display: none;
   }
   .desktop_nav_bar {
@@ -517,7 +512,6 @@
 
   @media screen and (max-width: 1106px) {
     .header_text_description {
-      border: 1px solid red;
       width: 100%;
     }
 
@@ -544,7 +538,6 @@
     }
 
     .email_sub_container {
-      border: 1px solid red;
       width: 50%;
     }
 
@@ -578,7 +571,6 @@
     }
 
     .email_sub_container {
-      border: 1px solid red;
       width: 46%;
     }
   }
@@ -588,8 +580,7 @@
       padding: 2rem;
     }
     .logo_main {
-      width: 80%;
-      border: 1px solid red;
+      width: 80%;   
     }
 
     .about_us {
