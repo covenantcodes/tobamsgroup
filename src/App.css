@@ -461,10 +461,52 @@
     padding: 4rem 6rem;
   }
 
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1350px) {
     .contact_body {
       padding: 3rem;
       flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about_us{
+      width: 65%;
+      align-self: center;
+      margin-top: 1rem;
+    }
+
+    .logo_about{
+      width: 15%;
+    }
+
+    .social_container{
+        width: 24%;
     }
   }
+
+  @media screen and (max-width: 1106px){
+      .header_text_description{
+        border: 1px solid red;
+        width: 100%;
+      }
+
+      .input_name{
+        padding: 1rem;
+      }
+
+      .input_email{
+        padding: 1rem;
+      }
+
+      .logo_about{
+        width: 20%;
+      }
+
+      .social_container{
+        width: 30%;
+    }
+
+  }
+
+
 }
