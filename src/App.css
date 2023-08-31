@@ -382,9 +382,6 @@
     display: none;
   }
 
-  .mobile_nav_bar {
-  }
-
   .navbar_menu {
     display: flex;
     flex-direction: column;
@@ -469,44 +466,108 @@
       justify-content: center;
     }
 
-    .about_us{
+    .about_us {
       width: 65%;
       align-self: center;
       margin-top: 1rem;
     }
 
-    .logo_about{
+    .logo_about {
       width: 15%;
     }
 
-    .social_container{
-        width: 24%;
+    .social_container {
+      width: 24%;
+    }
+
+    .mobile_uk_logo {
+      cursor: pointer;
+      width: 17%;
+    }
+
+    .mobile_cart_icon {
+      cursor: pointer;
+      width: 17%;
+    }
+
+    .mobile_user_box {
+      border: 1px solid var(--primary-color);
+      width: 25%;
     }
   }
 
-  @media screen and (max-width: 1106px){
-      .header_text_description{
-        border: 1px solid red;
-        width: 100%;
-      }
-
-      .input_name{
-        padding: 1rem;
-      }
-
-      .input_email{
-        padding: 1rem;
-      }
-
-      .logo_about{
-        width: 20%;
-      }
-
-      .social_container{
-        width: 30%;
+  @media screen and (max-width: 1106px) {
+    .header_text_description {
+      border: 1px solid red;
+      width: 100%;
     }
 
+    .input_name {
+      padding: 1rem;
+    }
+
+    .input_email {
+      padding: 1rem;
+    }
+
+    .logo_about {
+      width: 20%;
+    }
+
+    .social_container {
+      width: 30%;
+    }
+
+    .action_button {
+      padding: 0.5rem;
+      font-size: 0.8em;
+      font-weight: bold;
+    }
+
+    .sub_input {
+      padding: 0.5rem;
+      font-size: 14px;
+      width: 60%;
+    }
+
+    .footer_social_container {
+      width: 90%;
+    }
   }
 
+  @media screen and (max-width: 890px) {
+    .contact_body {
+      padding: 1rem;
+    }
 
+    .input_name {
+      padding: 0.8rem;
+    }
+
+    .input_email {
+      padding: 0.8rem;
+    }
+
+    .about_us {
+      width: 66%;
+    }
+
+    .social_container {
+      width: 35%;
+    }
+    .footer_social_container {
+      width: 100%;
+    }
+
+    .email_sub_container {
+      border: 1px solid red;
+      width: 46%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .about_us {
+      width: 67%;
+    }
+  }
 }

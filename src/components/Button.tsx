@@ -6,9 +6,10 @@ interface CustomButtonProps {
   textColor?: string;
   width?: string;
   padding?: string;
-  borderRadius?:string;
-  cursor?:string
-  hoverBackgroundColor?: string
+  responsivePadding?: string;
+  borderRadius?: string;
+  cursor?: string;
+  hoverBackgroundColor?: string;
 }
 
 const CustomButton: React.FC<CustomButtonProps> = ({
@@ -17,9 +18,9 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   textColor = "var(--primary-color)",
   width = "24%",
   padding = "1rem",
-  borderRadius ="16px",
-  cursor="pointer",
-
+  responsivePadding = "0.8rem", 
+  borderRadius = "16px",
+  cursor = "pointer",
 }) => {
   const buttonStyle: React.CSSProperties = {
     backgroundColor: backgroundColor,
@@ -29,6 +30,12 @@ const CustomButton: React.FC<CustomButtonProps> = ({
     borderRadius: borderRadius,
     cursor: cursor,
   };
+
+  // Media query for smaller screens
+  const mediaQuery = window.matchMedia("(max-width: 1106px)");
+  if (mediaQuery.matches) {
+    buttonStyle.padding = responsivePadding;
+  }
 
   return (
     <div className="action_button" data-aos="fade-in" style={buttonStyle}>
