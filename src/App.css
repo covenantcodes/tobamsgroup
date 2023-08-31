@@ -576,6 +576,7 @@
   }
 
   @media screen and (max-width: 786px) {
+   
     .contact_container {
       padding: 2rem;
     }
@@ -629,12 +630,30 @@
   }
 
   @media screen and (max-width: 668px) {
+    .mobile_left_nav_items{
+      width: 40%;
+      
+      justify-content: space-between
+    }
+    .mobile_uk_logo{
+      width:15%;
+      
+    }
+
+    .mobile_cart_icon{
+      width: 15%;
+      
+    }
+
+    .mobile_user_box{
+      width: 30%;
+    }
+
     .about_us {
       width: 68%;
     }
 
     .mobile_nav_bar {
-      border: 2px solid red;
       padding: 1%;
     }
 
@@ -782,6 +801,11 @@
     .footer_social_container {
       width: 80%;
     }
+
+    .mobile_search_bar{
+      padding: .5rem;
+      width: 80%;
+    }
   }
 
   @media screen and (max-width: 320px) {
@@ -823,6 +847,24 @@
 
     .subscribe_button{
         font-size: .7rem;
+    }
+
+    .mobile_left_nav_items{
+      width: 50%;
+    }
+
+    .mobile_uk_logo{
+      width:20%;
+      
+    }
+
+    .mobile_cart_icon{
+      width: 20%;
+      
+    }
+
+    .mobile_user_box{
+      width: 30%;
     }
   }
 }
