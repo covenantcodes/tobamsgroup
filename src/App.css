@@ -570,48 +570,124 @@
       width: 67%;
     }
 
-    .newsletter_container_header{
+    .newsletter_container_header {
       font-size: 2rem;
     }
 
-    .newsletter_container_description{
+    .newsletter_container_description {
       width: 100%;
     }
-    
-   .logo_box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   }
 
-   .footer_box_container{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   }
+    .logo_box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-   .footer_box{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   }
+    .footer_box_container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-   .footer_items{
-    text-align: center;
-   }
+    .footer_box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-   .social_container{
-    width: 40%;
-   }
+    .footer_items {
+      text-align: center;
+    }
 
-   .footer_social_container{
-    width: 35%;
-   }
+    .social_container {
+      width: 40%;
+    }
+
+    .footer_social_container {
+      width: 35%;
+    }
   }
 
   @media screen and (max-width: 668px) {
+
+    .about_us{
+      width: 68%;
+    }
+
+    .mobile_nav_bar {
+      border: 2px solid red;
+      padding: 1%;
+    }
+
+    .fa-times {
+      font-size: 1.5rem;
+    }
+
+    .fa-bars {
+      font-size: 1.5rem;
+    }
+
+    .input_name{
+      padding: .8rem;
+      font-size: .9rem;
+    }
+
+    .input_email{
+      padding: .8rem;
+      font-size: .9rem;
+
+    }
+
+    .input_problem{
+      padding: .8rem;
+      font-size: .9rem;
+
+    }
+
+    .name_input_box {
+      padding: .5rem 0rem;
+    }
+
+    .logo_about{
+      width: 25%;
+    }
+
+    .newsletter_container_header{
+      font-size: 1.5rem; 
+    }
+
+    .newsletter_container_description{
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width:614px){
+      .header_text_description{
+        font-size: .85rem;
+      }
+
+      .logo_about{
+        width: 25%;
+      }
+
+      .social_container{
+        width: 55%;
+      }
+
+      .footer_social_container{
+        width: 55%;
+      }
+
+      .email_sub_container{
+          width: 70%;
+      }
+  }
+
+  @media screen and (max-width:425px) {
     
   }
+
 }
