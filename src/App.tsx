@@ -21,7 +21,17 @@ function App() {
         </div>
 
         <div className="left_nav_items">
+          <img src="../public/img/uk.png" alt="" className="uk_logo" />
+          <img
+            src="../public/img/shopping-cart.png"
+            alt=""
+            className="cart_icon"
+          />
 
+          <div className="user_box">
+            <img src="../public/img/user.png" alt="" className="user_icon" />
+          <i className="fa-solid fa-chevron-down"></i>
+          </div>
         </div>
       </div>
     </div>

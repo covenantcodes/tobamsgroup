@@ -1,26 +1,25 @@
 @import url(./index.css); 
 
 .nav_bar{
-  border: 1px solid red;
-  padding: 1rem;
+  padding: 1rem 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  position: fixed;
 }
 
 .logo_container{
-    border: 1px solid red;
 }
 
 .nav_links_container{
   display: flex;
-  border: 1px solid red;
   padding: 1rem;
 }
 
 .nav_links{
   list-style: none;
-  padding: 1rem;
+  padding: .5rem 3rem;
   cursor: pointer;
 }
 
@@ -47,4 +46,35 @@
   font-family: var(--font-family);
   outline: none;
   width: 90%;
+}
+
+.left_nav_items{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10%;
+}
+
+.uk_logo{
+  cursor: pointer;
+}
+
+.cart_icon{
+  cursor: pointer;
+  width: 15%
+}
+
+.user_box{
+  border: 1px solid var(--primary-color);
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem;
+  border-radius: 100px;
+  background-color: var(--n-background-color);
+}
+
+.user_icon{
+  width: 40%;
 }
