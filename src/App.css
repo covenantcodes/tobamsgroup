@@ -21,5 +21,30 @@
 .nav_links{
   list-style: none;
   padding: 1rem;
-  
+  cursor: pointer;
+}
+
+.search_bar{
+  border: 1px solid #D0D0D0;
+  padding: 1rem;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+
+}
+
+.fa-magnifying-glass{
+  padding: .5rem;
+
+}
+
+.search_input{
+  border: none;
+  font-size: 1rem;
+  padding: .5rem;
+  font-family: var(--font-family);
+  outline: none;
+  width: 90%;
 }
