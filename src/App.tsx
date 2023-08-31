@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import "./App.css";
 import CustomButton from "./components/Button";
 // AOS
@@ -9,9 +10,28 @@ AOS.init({
 });
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Close the menu when the screen size is larger than a certain breakpoint
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div>
-      <div className="nav_bar">
+      <div className="desktop_nav_bar">
         <div className="logo_container">
           <img
             src="../public/img/Logo.png"
@@ -20,10 +40,6 @@ function App() {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           />
-        </div>
-
-        <div className="hamburger">
-            <i className="fa-solid fa-bars"></i>
         </div>
 
         <ul className="nav_links_container">
@@ -51,7 +67,55 @@ function App() {
             <i className="fa-solid fa-chevron-down"></i>
           </div>
         </div>
+
+        <div className="hamburger" onClick={toggleMenu}>
+          <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"}`}></i>
+        </div>
       </div>
+
+      {isMenuOpen && (
+        <div className="mobile_nav_bar">
+          <div className={`navbar_menu ${isMenuOpen ? "open" : ""}`}>
+            <ul className="mobile_nav_links_container">
+              <li className="mobile_nav_links">Store</li>
+              <li className="mobile_nav_links">About</li>
+              <li className="mobile_nav_links">Contact</li>
+              <li className="mobile_nav_links">Blog</li>
+            </ul>
+
+            <div className="mobile_search_bar">
+              <i className="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                placeholder="Search"
+                className="search_input"
+              />
+            </div>
+
+            <div className="mobile_left_nav_items">
+              <img
+                src="../public/img/uk.png"
+                alt=""
+                className="mobile_uk_logo"
+              />
+              <img
+                src="../public/img/shopping-cart.png"
+                alt=""
+                className="mobile_cart_icon"
+              />
+
+              <div className="mobile_user_box">
+                <img
+                  src="../public/img/user.png"
+                  alt=""
+                  className="user_icon"
+                />
+                <i className="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="contact_body">
         <div
@@ -138,6 +202,7 @@ function App() {
               <textarea
                 className="input_problem"
                 placeholder="Describe your issues"
+                rows={8}
               />
             </div>
           </div>
