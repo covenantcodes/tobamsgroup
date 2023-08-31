@@ -30,18 +30,50 @@ function App() {
 
           <div className="user_box">
             <img src="../public/img/user.png" alt="" className="user_icon" />
-          <i className="fa-solid fa-chevron-down"></i>
+            <i className="fa-solid fa-chevron-down"></i>
           </div>
         </div>
       </div>
 
       <div className="contact_body">
-          <div className="contact_container">
-            
+        <div className="about_us">
+          <img src="../public/img/Logo.png" alt="" className="logo_about" />
+          <div className="about_text">
+            RARE EAT FRESH represents a range of unique ingredients and the
+            vibrancy of different Cultures, every product in the Rare Eat range
+            has a story inspired by different Cultures
+            <br />
+            <span>020 7205 4031</span>
+            <br />
+            <span>support@rareeatfresh.com</span>
           </div>
+
+          <div className="social_container">
+            <div className="social_box">
+              <i className="fa-brands fa-facebook-f social_icon"></i>
+            </div>
+
+            <div className="social_box">
+              <i className="fa-brands fa-instagram social_icon"></i>
+            </div>
+
+            <div className="social_box">
+              <i className="fa-brands fa-twitter social_icon"></i>
+            </div>
+
+            <div className="social_box">
+              <i className="fa-brands fa-linkedin-in social_icon"></i>
+            </div>
+          </div>
+        </div>
+        <div className="contact_container">
+          <div className="contact_header">
+            <div className="header_text">Get in touch</div>
+          </div>
+        </div>
       </div>
     </div>
-  ); 
+  );
 }
 
 export default App;
