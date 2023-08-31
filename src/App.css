@@ -43,7 +43,7 @@
 
 .search_input {
   font-size: 1rem;
-  padding: 0.5rem;  
+  padding: 0.5rem;
   width: 90%;
 }
 
@@ -72,6 +72,7 @@
   padding: 0.5rem;
   border-radius: 100px;
   background-color: var(--n-background-color);
+  border-radius: 0px, 32px, 0px, 32px;
 }
 
 .user_icon {
@@ -81,24 +82,31 @@
 .contact_body {
   background-image: url(../public/img/bg-phone.png);
   height: 80vh;
-  padding: 6rem;
-  border: 1px solid red;
+  padding: 4rem 10rem;
+  /* border: 1px solid red; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
 }
 
 .about_us {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 408px;
-  background: rgba(200, 200, 200, 0.395); /* Semi-transparent white background */
+  background: rgba(
+    200,
+    200,
+    200,
+    0.395
+  ); /* Semi-transparent white background */
   backdrop-filter: blur(50px); /* Apply the blur effect */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for added depth */
   padding: 20px;
+  align-self: flex-end;
+  border-top-right-radius: 32px;
+  border-bottom-left-radius: 32px;
 }
 
 .logo_about {
@@ -133,50 +141,110 @@
 }
 .social_icon {
   color: white;
-  font-size: 17px
+  font-size: 17px;
 }
-
 
 .contact_container {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 60%;
   padding: 3rem;
-  background: rgba(200, 200, 200, 0.395); /* Semi-transparent white background */
+  background: rgba(
+    200,
+    200,
+    200,
+    0.395
+  ); /* Semi-transparent white background */
   backdrop-filter: blur(50px); /* Apply the blur effect */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for added depth */
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
 }
 
-.header_text{
+.header_text {
   font-size: 32px;
-  font-weight: bold ;
+  font-weight: bold;
 }
 
-.header_text_description{
+.header_text_description {
   font-size: 16px;
   color: var(--deep-neutral-color);
   font-weight: 400;
   width: 60%;
   line-height: 1.5rem;
-  
 }
 
-.name_input_box{
+.name_input_box {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0rem;
 }
 
-.input_name{
+.input_name {
   background-color: white;
   padding: 1.5rem;
   width: 40%;
-  border-radius:50px ;
+  border-radius: 50px;
 }
 
-.input_email{
+.input_email {
   background-color: white;
   padding: 1.5rem;
   width: 100%;
-  border-radius:50px ;
+  border-radius: 50px;
+}
+
+.input_problem {
+  width: 100%;
+  height: 15rem;
+  padding: 1.5rem;
+  border-radius: 20px;
+  resize: none;
+}
+
+.newsletter_container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter_container_header {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.newsletter_container_description {
+  width: 60%;
+  text-align: center;
+  padding-top: 1rem;
+  color: var(--secondary-color);
+}
+
+.email_sub_container {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.sub_input {
+  border-radius: 50px;
+  padding: 1rem;
+  border: 1px solid gray;
+  width: 55%;
+}
+
+.action_button{
+  text-align: center;
+  
+}
+
+.action_button:hover{
+  transform: scale(0.95);
+  transition: ease-in-out .6s all;
+  cursor: pointer;
 }

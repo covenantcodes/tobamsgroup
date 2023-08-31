@@ -1,4 +1,5 @@
 import "./App.css";
+import CustomButton from "./components/Button";
 
 function App() {
   return (
@@ -107,10 +108,43 @@ function App() {
                 className="input_email"
               /> */}
 
-              <textarea className="input_problem" placeholder="Describe your issues"></textarea>
+              <textarea
+                className="input_problem"
+                placeholder="Describe your issues"
+              />
             </div>
-            
           </div>
+
+          <CustomButton
+            text="Send"
+            backgroundColor="#F36F00"
+            textColor="white"
+            width="100%"
+            borderRadius="32px"
+            // textAlign="center"
+          />
+        </div>
+      </div>
+
+      <div className="newsletter_container">
+        <div className="newsletter_container_header">
+          Join Our Newsletter: Stay Connected, Savor Exclusives!
+        </div>
+        <div className="newsletter_container_description">
+          Subscribe to our newsletter and be a part of the vibrant Rare Eat
+          Fresh community. Stay connected with the latest updates, exclusive
+          offers, and exciting promotions on rare West African food ingredients.
+        </div>
+        <div className="email_sub_container">
+              <input type="text" placeholder="Email Address" className="sub_input"/>
+              <CustomButton
+                text="Subscribe"
+                backgroundColor="#F36F00"
+                textColor="white"
+                width="20%"
+                borderRadius="32px"
+                
+          />
         </div>
       </div>
     </div>
