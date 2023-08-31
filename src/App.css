@@ -719,7 +719,7 @@
     }
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 475px) {
     .header_text {
       font-size: 1.7rem;
     }
