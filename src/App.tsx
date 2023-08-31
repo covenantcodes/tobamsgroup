@@ -68,7 +68,48 @@ function App() {
         </div>
         <div className="contact_container">
           <div className="contact_header">
-            <div className="header_text">Get in touch</div>
+            <div className="header_text">
+              Get in touch
+              <br />
+              <div className="header_text_description">
+                Your Questions and Feedback Matter to Us - Reach Out, Let's
+                Connect, and Explore Together to Ensure Your Rare Eat Fresh
+                Experience Is Exceptional and Delightful.
+              </div>
+            </div>
+          </div>
+
+          <div className="textinput_container">
+            <div className="name_input_box">
+              <input
+                type="text"
+                placeholder="First Name"
+                className="input_name"
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                className="input_name"
+              />
+            </div>
+
+            <div className="name_input_box">
+              <input
+                type="text"
+                placeholder="Email Address"
+                className="input_email"
+              />
+            </div>
+            <div className="name_input_box">
+              {/* <input
+                type="text"
+                placeholder="Email Address"
+                className="input_email"
+              /> */}
+
+              <textarea className="input_problem" placeholder="Describe your issues"></textarea>
+            </div>
+            
           </div>
         </div>
       </div>

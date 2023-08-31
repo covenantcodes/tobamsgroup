@@ -42,11 +42,8 @@
 }
 
 .search_input {
-  border: none;
   font-size: 1rem;
-  padding: 0.5rem;
-  font-family: var(--font-family);
-  outline: none;
+  padding: 0.5rem;  
   width: 90%;
 }
 
@@ -98,10 +95,10 @@
 .about_us {
   border: 1px solid black;
   width: 408px;
-  background: rgba(255, 255, 255, 0.15); /* Semi-transparent white background */
+  background: rgba(200, 200, 200, 0.395); /* Semi-transparent white background */
   backdrop-filter: blur(50px); /* Apply the blur effect */
-  padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for added depth */
+  padding: 20px;
 }
 
 .logo_about {
@@ -143,4 +140,43 @@
 .contact_container {
   border: 1px solid black;
   width: 60%;
+  padding: 3rem;
+  background: rgba(200, 200, 200, 0.395); /* Semi-transparent white background */
+  backdrop-filter: blur(50px); /* Apply the blur effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for added depth */
+}
+
+.header_text{
+  font-size: 32px;
+  font-weight: bold ;
+}
+
+.header_text_description{
+  font-size: 16px;
+  color: var(--deep-neutral-color);
+  font-weight: 400;
+  width: 60%;
+  line-height: 1.5rem;
+  
+}
+
+.name_input_box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+}
+
+.input_name{
+  background-color: white;
+  padding: 1.5rem;
+  width: 40%;
+  border-radius:50px ;
+}
+
+.input_email{
+  background-color: white;
+  padding: 1.5rem;
+  width: 100%;
+  border-radius:50px ;
 }

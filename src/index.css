@@ -3,11 +3,11 @@
 :root {
   --font-family: 'Mulish', sans-serif;
   font-family: 'Mulish', sans-serif;
-  line-height: 1.5;
   font-weight: 400;
   --primary-color:  #F36F00;
   --n-background-color: #fceeee;
   --neutral-color: ##D0D0D0;
+  --deep-neutral-color: #626262;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -20,3 +20,8 @@
   padding: 0px
 }
 
+input{
+  font-family: var(--font-family);
+  border: none;
+  outline: none;
+}
