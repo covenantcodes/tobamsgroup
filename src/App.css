@@ -565,9 +565,53 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 786px) {
     .about_us {
       width: 67%;
     }
+
+    .newsletter_container_header{
+      font-size: 2rem;
+    }
+
+    .newsletter_container_description{
+      width: 100%;
+    }
+    
+   .logo_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .footer_box_container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .footer_box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .footer_items{
+    text-align: center;
+   }
+
+   .social_container{
+    width: 40%;
+   }
+
+   .footer_social_container{
+    width: 35%;
+   }
+  }
+
+  @media screen and (max-width: 668px) {
+    
   }
 }
