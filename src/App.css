@@ -1,1 +1,25 @@
 @import url(./index.css); 
+
+.nav_bar{
+  border: 1px solid red;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo_container{
+    border: 1px solid red;
+}
+
+.nav_links_container{
+  display: flex;
+  border: 1px solid red;
+  padding: 1rem;
+}
+
+.nav_links{
+  list-style: none;
+  padding: 1rem;
+  
+}
