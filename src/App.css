@@ -309,6 +309,7 @@
   align-items: center;
 }
 
+
 .footer_social_icon {
   color: black;
   font-size: 17px;
@@ -345,7 +346,6 @@
   }
 
   .contact_container {
-    border: 1px solid saddlebrown;
     width: 60%;
   }
 }
@@ -785,8 +785,44 @@
   }
 
   @media screen and (max-width: 320px) {
+    .contact_container{
+      width: 85%;
+    }
+
+    .about_us{
+      width: 90%;
+
+    }
+
+    .logo_about{
+      width: 50%;
+    }
+    
+    .social_container{
+      width: 80%;
+    }
+
+    .newsletter_container_header{
+      font-size: 1.2rem;
+    }
+
+    .newsletter_container_description{
+      font-size: .9rem;
+    }
+
     .footer_social_container {
       width: 100%;
+    }
+
+    .email_sub_container{
+      width: 100%;
+      justify-content: space-between;
+      padding-left: .1rem;
+      padding-right: .1rem;
+    }
+
+    .subscribe_button{
+        font-size: .7rem;
     }
   }
 }
