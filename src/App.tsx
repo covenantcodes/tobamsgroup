@@ -17,8 +17,9 @@ function App() {
             </ul>
 
             <div className="search_bar">
-                
+              
             </div>
+
         </div>
     </div>
   )
