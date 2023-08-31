@@ -34,8 +34,14 @@ function App() {
           </div>
         </div>
       </div>
+
+      <div className="contact_body">
+          <div className="contact_container">
+            
+          </div>
+      </div>
     </div>
-  );
+  ); 
 }
 
 export default App;

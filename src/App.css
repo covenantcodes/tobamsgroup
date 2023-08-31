@@ -6,7 +6,10 @@
   align-items: center;
   justify-content: space-between;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-  position: fixed;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
 }
 
 .logo_container{
@@ -77,4 +80,17 @@
 
 .user_icon{
   width: 40%;
+}
+
+.contact_body{
+  background-image: url(../public/img/bg-phone.png);
+  height: 100vh;
+  border: 1px solid red;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact_container{
+  border: 1px solid red
 }
