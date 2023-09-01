@@ -791,6 +791,10 @@
   }
 
   @media screen and (max-width: 375px) {
+    .subscribe_button{
+      padding: 1rem;
+    }
+
     .about_us {
       width: 82%;
     }
@@ -867,5 +871,11 @@
     .mobile_user_box{
       width: 30%;
     }
+  }
+
+  @media screen and (max-width:300px) {
+      .subscribe_button{
+          padding: .5rem;
+      }
   }
 }
