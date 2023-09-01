@@ -8,6 +8,8 @@ AOS.init({
   once: true,
 });
 
+
+
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -34,7 +36,7 @@ function App() {
         <div className="logo_container">
           <img
             className="logo_main"
-            src="../public/img/Logo.png"
+            src="img/Logo.png"
             alt=""
             data-aos="zoom-in"
             data-aos-duration="1000"
@@ -70,15 +72,15 @@ function App() {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <img src="../public/img/uk.png" alt="" className="uk_logo" />
+          <img src="img/uk.png" alt="" className="uk_logo" />
           <img
-            src="../public/img/shopping-cart.png"
+            src="img/shopping-cart.png"
             alt=""
             className="cart_icon"
           />
 
           <div className="user_box">
-            <img src="../public/img/user.png" alt="" className="user_icon" />
+            <img src="img/user.png" alt="" className="user_icon" />
             <i className="fa-solid fa-chevron-down"></i>
           </div>
         </div>
@@ -120,19 +122,19 @@ function App() {
 
             <div className="mobile_left_nav_items">
               <img
-                src="../public/img/uk.png"
+                src="img/uk.png"
                 alt=""
                 className="mobile_uk_logo"
               />
               <img
-                src="../public/img/shopping-cart.png"
+                src="img/shopping-cart.png"
                 alt=""
                 className="mobile_cart_icon"
               />
 
               <div className="mobile_user_box">
                 <img
-                  src="../public/img/user.png"
+                  src="img/user.png"
                   alt=""
                   className="user_icon"
                 />
@@ -150,7 +152,7 @@ function App() {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <img src="../public/img/Logo.png" alt="" className="logo_about" />
+          <img src="img/Logo.png" alt="" className="logo_about" />
           <div className="about_text">
             RARE EAT FRESH represents a range of unique ingredients and the
             vibrancy of different Cultures, every product in the Rare Eat range
@@ -279,7 +281,7 @@ function App() {
 
       <div className="footer">
         <div className="logo_box">
-          <img src="../public/img/Logo.png" alt="" />
+          <img src="img/Logo.png" alt="" />
         </div>
 
         <div className="footer_box_container">

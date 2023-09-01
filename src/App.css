@@ -297,6 +297,7 @@
 .footer_items {
   color: white;
   padding: 0.7rem 0rem;
+  cursor: pointer;
 }
 
 .footer_social_box {
